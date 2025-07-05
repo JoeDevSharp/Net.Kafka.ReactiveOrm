@@ -7,11 +7,11 @@ namespace Net.Kafka.ReactiveOrm
     /// Base class for defining reactive Kafka contexts.
     /// Works similarly to Entity Framework's DbContext.
     /// </summary>
-    public abstract class KafkaOrmContext
+    public abstract class KafkaContext
     {
         private readonly IKafkaBus _bus;
 
-        protected KafkaOrmContext(IKafkaBus bus)
+        protected KafkaContext(IKafkaBus bus)
         {
             _bus = bus ?? throw new ArgumentNullException(nameof(bus));
             InitializeTopicSets();
