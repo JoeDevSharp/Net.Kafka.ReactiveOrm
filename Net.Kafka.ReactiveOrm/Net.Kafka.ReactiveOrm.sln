@@ -5,6 +5,10 @@ VisualStudioVersion = 17.14.36221.1 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net.Kafka.ReactiveOrm", "Net.Kafka.ReactiveOrm.csproj", "{4B996D6C-2CE0-4263-9E94-32B7514741D2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo", "Demo", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppTest", "..\ConsoleAppTest\ConsoleAppTest.csproj", "{C120DD36-D216-4692-96F9-6BF638F96B33}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +19,16 @@ Global
 		{4B996D6C-2CE0-4263-9E94-32B7514741D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4B996D6C-2CE0-4263-9E94-32B7514741D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4B996D6C-2CE0-4263-9E94-32B7514741D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C120DD36-D216-4692-96F9-6BF638F96B33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C120DD36-D216-4692-96F9-6BF638F96B33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C120DD36-D216-4692-96F9-6BF638F96B33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C120DD36-D216-4692-96F9-6BF638F96B33}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C120DD36-D216-4692-96F9-6BF638F96B33} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {138F9470-ECFC-42A7-8427-4BF150BAD12A}

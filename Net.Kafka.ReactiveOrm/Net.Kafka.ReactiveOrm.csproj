@@ -4,6 +4,34 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Version>1.0.1</Version>
+    <Description>Net.Kafka.ReactiveOrm is a lightweight Reactive Object Mapper (ROM) for Kafka in .NET.
+It maps Kafka topics to strongly typed, reactive entities inspired by Entity Framework (DbContext / DbSet&lt;T&gt;), enabling declarative subscription and publishing with LINQ-style syntax and reactive patterns.</Description>
+    <Company>JoeDevSharp</Company>
+    <Authors>JoeDevSharp</Authors>
+    <Title>$(AssemblyName)</Title>
+    <PackageProjectUrl>https://github.com/JoeDevSharp/</PackageProjectUrl>
+    <PackageIcon>kafka.Extention.icon.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/JoeDevSharp/Net.Kafka.ReactiveOrm</RepositoryUrl>
+    <PackageTags>kafka; reactive; orm; reactive-orm; .net; dotnet; messaging; event-driven; streaming; iot; real-time; pubsub; message-broker; distributed; entity-framework; observables; system.reactive; kafka-client; microservices</PackageTags>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\iCloudDrive\JoeDev\Logos\kafka.Extention.icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Confluent.Kafka" Version="2.11.0" />
+    <PackageReference Include="System.Reactive" Version="6.0.1" />
+  </ItemGroup>
 
 </Project>
